@@ -1,0 +1,22 @@
+<header class="header_container">
+  <div class="brand_logo"><h1>New Teenpatti Apps</h1></div>
+  <div class="header_menu_wrapper">
+    <div class="menu_bar_icon">
+      <span (click)="openSidebar()"><i class="fas fa-bars fa-2xl"></i> </span>
+    </div>
+    <ul
+      [ngClass]="sidebar ? 'showSidebar' : 'hideSidebar'"
+      class="header_menu_wrapper-item"
+    >
+      <div class="menu_bar_icon cross_icon-box">
+        <span (click)="openSidebar()"
+          ><i class="fa-solid fa-xmark fa-2xl"></i>
+        </span>
+      </div>
+      <li>Home</li>
+      <li>Card Games</li>
+      <li>Popular Apps</li>
+      <li>Latest Update</li>
+    </ul>
+  </div>
+</header>
